@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+ @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+ body {
+     background-color:#f1f1f1!important;
+}
+ .header form, .action_button {
+     display: flex;
+}
+ .white {
+     background-color: #fff;
+     padding: 1em 0.5em;
+     box-shadow: 1px 1px 6px 1px #939393;
+     margin: 1em 0;
+}
+ .side_fixedlist {
+     height: 100%;
+}
+ .side_fixedlist li {
+     list-style: none;
+}
+ .side_fixedlist a {
+     color: #0f0e0e;
+}
+ .header .input-group {
+     position: relative;
+     margin: 25px 20px;
+}
+ .action_button button {
+     margin-left: 6.7vw;
+}
+ .save, .delete {
+     margin-left: 2vw;
+}
+ .header .form-control + .defualt{
+     top: -15px;
+     color: #2196F3;
+     font-size: 12px;
+}
+ .header .form-control {
+     position: relative;
+     z-index: 1;
+     width: 100%;
+     height: 35px;
+     font-size: 16px;
+     border: none;
+     border-bottom: 1px solid #d9d9d9;
+     background-color: transparent;
+}
+ .header .form-control + label {
+     position: absolute;
+     top: 10px;
+     left: 3px;
+     font-size: 16px;
+     color: #999999;
+     transition: all .2s ease-out;
+}
+ .header .form-control:focus {
+     outline: none;
+     border-width: 2px;
+     border-color: #2196F3;
+     transition: all .2s ease-out;
+}
+ .header .form-control:focus + label, .form-control.has-value + label {
+     top: -15px;
+     color: #2196F3;
+     font-size: 12px;
+}
+ .header .form-control.has-value:not(:focus) + label {
+     color: #999999;
+}
+ .action_button button {
+     background-color: transparent;
+     color: #2196f3;
+     font-size: 14px;
+     text-transform: uppercase;
+     font-weight: 700;
+     border: none;
+     height: 36px;
+     cursor: pointer;
+     padding: 0 16px;
+}
+ .action_button button:hover {
+     color: #fff;
+     background-color: #2196f3;
+     transition: all .2s ease-out;
+     font-weight: 100;
+}
+ .save i {
+     color: darkgreen;
+     font-weight: 700;
+     font-size: 16px;
+}
+ .delete i {
+     font-size: 16px;
+     color: red;
+}
+ textarea.form-control {
+     height: 120px;
+}
+ @media only screen and (max-width:900px){
+     .hidden{
+         display: none;
+    }
+}
+ @media only screen and (max-width:681px){
+     .header form {
+         display: block;
+    }
+     .action_button>div {
+         margin-left: 6.7vw;
+    }
+}
+ 
